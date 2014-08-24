@@ -54,14 +54,3 @@ fBodyGyroJerkMag
 std(): Standard deviation
 
 
-##Selection of Mean and Standard Deviation Measurements
-I only extracted the variables (features) with exact "mean()" or "std()" strings in the variable names. Since the following variables:
-
-gravityMean  
-tBodyAccMean  
-tBodyAccJerkMean  
-tBodyGyroMean  
-tBodyGyroJerkMean  
-
-were used for the angle() variable, which is used to calculate angle between to vectors, they were not included in my tidy data.
-
