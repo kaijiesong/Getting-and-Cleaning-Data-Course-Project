@@ -14,3 +14,13 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ##Input of the data
 The R script includes the codes to download and unzip the data in your working directory. However, if you already have the "UCI HAR Dataset" directory in your working directory, you can skip the download part of the script to save time. 
+
+##How the script works
+1. Download the zipped data to working directory and unzip it.  
+2. Load the datasets.  
+3. Merge the test and train datasets. Cbind the subject, activity and X_data. Use the values in features.txt as the names of the variables.  
+4. Extract the mean and standard deviation measurements
+5. Replace the activity index with descriptive names
+6. Label the data with descriptive variable names.
+7. Summarize the data and creat a tidy dataset with the averages of each variable for each combination of activity and subject.
+8. Output the final tidy data with write.table().
